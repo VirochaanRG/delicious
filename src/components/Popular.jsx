@@ -39,7 +39,6 @@ function Popular() {
                     <img src={recipe.image} alt={recipe.title}/>
                     <Gradient/>
                   </Card>
-                  <p>{recipe.title}</p>
                 </SplideSlide> 
               );
             })}
@@ -67,20 +66,19 @@ const Card = styled.div`
     object-fit: cover;
   }
   p {
-    position: absolute;
+    postion: absolute;
     z-index: 10;
     left: 50%;
     bottom: 0%;
-    transform: translate(-50%, 0%);
-    color: white;
-    width: 100%;
-    text-align: center;
     font-weight: 600;
     font-size: 1rem;
-    height: 40%;
-    display: flex;
+    color: black;
+    display: flex; 
     justify-content: center;
     align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 40%;
   }
 `;
 
